@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='flex flex-col justify-center items-center'>
       <Characters characters={items} takeCharToDelete={setCharToDelete}/>
-      {charToDelete && <Delete char={charToDelete}/>}
+      {charToDelete}
       <NewChararaters update={setItems}/>
     </div>
   )
