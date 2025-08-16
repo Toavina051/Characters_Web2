@@ -17,7 +17,7 @@ function App() {
   },[charToDelete])
 
   return (
-    <div>
+    <div className='flex flex-col justify-center items-center'>
       <Characters characters={items} takeCharToDelete={setCharToDelete}/>
       {charToDelete && <Delete char={charToDelete}/>}
       <NewChararaters update={setItems}/>
